@@ -22,7 +22,8 @@
         "typo3-ter/formrelay-confirmation-mail": "self.version"
     },
     "require": {
-         "mediatis/formrelay": ">= 0.1.0"
+         "mediatis/formrelay": ">= 0.1.0",
+         "mediatis/formrelay-mail": ">= 0.0.3"
     },
     "type": "typo3-cms-extension",
     "version": "0.0.1"
