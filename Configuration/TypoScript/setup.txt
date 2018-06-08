@@ -1,0 +1,55 @@
+plugin.tx_formrelay_confirmation_mail {
+
+	enabled = {$plugin.tx_formrelay_confirmation_mail.enabled}
+
+	mailData {
+		subject = {$plugin.tx_formrelay_confirmation_mail.mailData.subject}
+		recipientName = {$plugin.tx_formrelay_confirmation_mail.mailData.recipientName}
+		recipientEmail = {$plugin.tx_formrelay_confirmation_mail.mailData.recipientEmail}
+		senderName = {$plugin.tx_formrelay_confirmation_mail.mailData.senderName}
+		senderEmail = {$plugin.tx_formrelay_confirmation_mail.mailData.senderEmail}
+		plainContent = {$plugin.tx_formrelay_confirmation_mail.mailData.plainContent}
+		htmlContent = {$plugin.tx_formrelay_confirmation_mail.mailData.htmlContent}
+	}
+
+	fields {
+		removeFieldNameParts =
+
+		validation {
+			required = email
+
+			validWithNoFilters = 1
+			# filters {
+			# 	1 {
+			# 		whitelist {
+			# 			country = us,ca
+			# 			inquiry_type = quote_request,product_information
+			# 		}
+			# 	}
+			# }
+		}
+
+		defaults {
+		}
+
+		mapping {
+	 	}
+
+		mappingOther = passthrough:
+
+		specialMapping {
+		}
+
+		ignore.value = html_enabled,subject,recipient,recipient_copy,submit,password,password_again,randomID,language
+
+		values {
+			ignoreIfEmpty = 1
+			mapping {
+			}
+		}
+	}
+
+	configurationOverwrite {
+	}
+
+}
