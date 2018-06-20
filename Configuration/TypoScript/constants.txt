@@ -2,9 +2,6 @@ plugin.tx_formrelay_confirmation_mail{
 	# cat=plugin.tx_formrelay_confirmation_mail//1; type=int+; label= Enable: Only convert to XML if not set to 0.
     enabled = 1
 
-	recipients = user@domain.com, user2@domain.com
-	sender = website@domain.com
-
 	mailData {
 		subject = Confirmation Mail
 		recipientName = {first_name} {last_name}

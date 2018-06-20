@@ -47,7 +47,7 @@ class ConfirmationMail extends \Mediatis\FormrelayMail\DataDispatcher\Mail
             $placeholder = '{' . $field . '}';
             $result = str_replace($placeholder, $value, $result);
         }
-        return $result;
+        return trim($result);
     }
 
     protected function getPlainTextContent($data)
