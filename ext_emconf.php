@@ -1,15 +1,5 @@
 <?php
 
-########################################################################
-# Extension Manager/Repository config file for ext: "formrelay_confirmation_mail"
-#
-# Auto generated 13-05-2009 13:55
-#
-# Manual updates:
-# Only the data in the array - anything else is removed by next write.
-# "version" and "dependencies" must not be touched!
-########################################################################
-
 $EM_CONF[$_EXTKEY] = array(
     'title' => 'Confirmation Mail Plugin',
     'description' => 'Send form Confirmation Mails via FormHandlers',
@@ -33,8 +23,8 @@ $EM_CONF[$_EXTKEY] = array(
     'constraints' => array(
         'depends' => array(
             'cms' => '',
-            'formrelay' => '0.0.9',
-            'formrelay_mail' => '0.0.3',
+            'formrelay' => '2.0.0',
+            'formrelay_mail' => '2.0.0',
         ),
         'conflicts' => array(
         ),

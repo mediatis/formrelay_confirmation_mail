@@ -1,29 +1,76 @@
 {
+    "name": "mediatis/formrelay-confirmation-mail",
+    "type": "typo3-cms-extension",
+    "description": "Mail delivery system with dynamic templates based on Mediatis Formrelay",
+    "license": "GPL-2.0+",
+    "keywords": [
+        "TYPO3",
+        "extension",
+        "form",
+        "formrelay",
+        "mail",
+        "confirmation",
+        "formrelay_mail",
+        "formrelay_confirmation_mail"
+    ],
+    "homepage": "https://www.mediatis.de",
     "authors": [
         {
-            "email": "voehringer@mediatis.de",
-            "homepage": "http://www.mediatis.de",
             "name": "Michael Vöhringer",
+            "role": "Developer"
+        },
+        {
+            "name": "Meelis Karulin",
+            "role": "Developer"
+        },
+        {
+            "name": "Damian Ickler",
+            "role": "Developer"
+        },
+        {
+            "name": "Stephan Ude",
             "role": "Developer"
         }
     ],
-	"autoload": {
-        "classmap": [
-            "Classes/"
-        ],
+    "require": {
+        "php": "~7.0 || ~7.1  || ~7.2",
+        "typo3/cms-core": "^8.7 || ^9.5",
+        "mediatis/formrelay": "^2.0",
+        "mediatis/formrelay-mail": "^2.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.0",
+        "nimut/testing-framework": "^4.1.5"
+    },
+    "autoload": {
         "psr-4": {
-            "Mediatis\\FormrelayConfirmationMail\\": "Classes/"
+            "Mediatis\\FormrelayConfirmationMail\\": "Classes"
         }
     },
-    "license": "GPL-2.0+",
-    "name": "mediatis/formrelay-confirmation-mail",
+    "autoload-dev": {
+        "psr-4": {
+            "Mediatis\\FormrelayConfirmationMail\\Tests\\": "Tests"
+        }
+    },
     "replace": {
         "mediatis/formrelay_confirmation_mail": "self.version",
         "typo3-ter/formrelay-confirmation-mail": "self.version"
     },
-    "require": {
-         "mediatis/formrelay": ">= 0.1.0",
-         "mediatis/formrelay-mail": ">= 0.0.3"
+    "config": {
+        "vendor-dir": ".Build/vendor",
+        "bin-dir": ".Build/bin"
     },
-    "type": "typo3-cms-extension"
+    "scripts": {
+        "link-extension": [
+            "mkdir -p .Build/Web/typo3conf/ext/",
+            "[ -L .Build/Web/typo3conf/ext/formrelay_confirmation_mail ] || ln -snvf ../../../../. .Build/Web/typo3conf/ext/formrelay_confirmation_mail"
+        ]
+    },
+    "extra": {
+        "typo3/cms": {
+            "cms-package-dir": "{$vendor-dir}/typo3/cms",
+            "web-dir": ".Build/Web"
+        }
+    }
 }
+
