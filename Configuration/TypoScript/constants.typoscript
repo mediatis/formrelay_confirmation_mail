@@ -1,0 +1,20 @@
+plugin.tx_formrelay_confirmation_mail{
+	settings {
+		enabled = 0
+
+		recipientEmail = {email}
+		recipientName = {first_name} {last_name}
+
+		senderEmail = website@domain.com
+		senderName = Website
+
+		subject = Confirmation Mail
+		plainContent = Hello {first_name} {last_name}! Your request has arrived and will be processed shortly.
+		#htmlContent = <h1>Hello {first_name} {last_name}!</h1> <p>Your request has arrived and will be processed shortly.</p>
+		htmlContent =
+
+		includeAttachmentsInMail = 0
+		passthroughFields = 1
+		ignoreEmptyFields = 1
+	}
+}
