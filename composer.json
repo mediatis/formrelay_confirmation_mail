@@ -35,8 +35,8 @@
     "require": {
         "php": "~7.0 || ~7.1  || ~7.2",
         "typo3/cms-core": "^8.7 || ^9.5",
-        "mediatis/formrelay": "^2.0",
-        "mediatis/formrelay-mail": "^2.0"
+        "mediatis/formrelay": "^5.0",
+        "form-relay/confirmation-formrelay-mail": "^1.0"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.0",
