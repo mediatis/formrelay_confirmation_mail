@@ -33,10 +33,11 @@
         }
     ],
     "require": {
-        "php": "~7.0 || ~7.1  || ~7.2",
-        "typo3/cms-core": "^10.4",
-        "mediatis/formrelay": "^5.1",
-        "mediatis/formrelay-mail": "^5.0"
+        "php": "~7.2",
+        "typo3/cms-core": "^10.4 || ^11.5",
+        "mediatis/formrelay": "^5.0 || ^6.0",
+        "form-relay/mail": "^3.0",
+        "symfony/mailer": "^5.3.4"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.0",
