@@ -1,13 +1,11 @@
 plugin.tx_formrelay_confirmation_mail{
 	settings {
 		# cat=plugin.tx_formrelay_confirmation_mail//1; type=int+; label= Enable: Only convert to XML if not set to 0.
-		enabled = 0
+		enabled = 1
 
 		subject = Confirmation Mail
-		recipientName = {first_name} {last_name}
-		recipientEmail = {email}
-		senderName = User Xyz
-		senderEmail = user@domain.com
+		recipient = {first_name} {last_name} <{email}>
+		sender = Mediatis Mediatis <user@domain.com>
 		plainContent = Hello {first_name} {last_name}! Your request has arrived and will be handled shortly.
 		#htmlContent = <h1>Hello {first_name} {last_name}!</h1> <p>Your request has arrived and will be handled shortly.</p>
 		htmlContent =

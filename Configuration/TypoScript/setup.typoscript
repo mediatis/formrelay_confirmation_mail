@@ -7,21 +7,13 @@ plugin.tx_formrelay_confirmation_mail {
 		subject.insertData = 1
 		subject.trim = 1
 
-		recipientName = {$plugin.tx_formrelay_confirmation_mail.settings.recipientName}
-		recipientName.insertData = 1
-		recipientName.trim = 1
+		recipient = {$plugin.tx_formrelay_confirmation_mail.settings.recipient}
+		recipient.insertData = 1
+		recipient.trim = 1
 
-		recipientEmail = {$plugin.tx_formrelay_confirmation_mail.settings.recipientEmail}
-		recipientEmail.insertData = 1
-		recipientEmail.trim = 1
-
-		senderName = {$plugin.tx_formrelay_confirmation_mail.settings.senderName}
-		senderName.insertData = 1
-		senderName.trim = 1
-
-		senderEmail = {$plugin.tx_formrelay_confirmation_mail.settings.senderEmail}
-		senderEmail.insertData = 1
-		senderEmail.trim = 1
+		sender = {$plugin.tx_formrelay_confirmation_mail.settings.sender}
+		sender.insertData = 1
+		sender.trim = 1
 
 		plainContent = {$plugin.tx_formrelay_confirmation_mail.settings.plainContent}
 		plainContent.insertData = 1
