@@ -4,24 +4,14 @@ plugin.tx_formrelay_confirmation_mail {
 		enabled = {$plugin.tx_formrelay_confirmation_mail.settings.enabled}
 
 		subject = {$plugin.tx_formrelay_confirmation_mail.settings.subject}
-		subject.insertData = 1
-		subject.trim = 1
 
 		recipient = {$plugin.tx_formrelay_confirmation_mail.settings.recipient}
-		recipient.insertData = 1
-		recipient.trim = 1
 
 		sender = {$plugin.tx_formrelay_confirmation_mail.settings.sender}
-		sender.insertData = 1
-		sender.trim = 1
 
 		plainBody = {$plugin.tx_formrelay_confirmation_mail.settings.plainBody}
-		plainBody.insertData = 1
-		plainBody.trim = 1
 
 		htmlBody = {$plugin.tx_formrelay_confirmation_mail.settings.htmlBody}
-		htmlBody.insertData = 1
-		htmlBody.trim = 1
 
 		includeAttachmentsInMail = {$plugin.tx_formrelay_confirmation_mail.settings.includeAttachmentsInMail}
 
