@@ -1,7 +1,7 @@
-plugin.tx_formrelay_confirmation_mail{
+plugin.tx_formrelay_confirmation_mail {
 	settings {
 		# cat=plugin.tx_formrelay_confirmation_mail//1; type=int+; label= Enable: Only convert to XML if not set to 0.
-		enabled = 1
+		enabled = 0
 
 		subject = Confirmation Mail
 		recipient = {first_name} {last_name} <{email}>
@@ -9,6 +9,6 @@ plugin.tx_formrelay_confirmation_mail{
 		plainContent = Hello {first_name} {last_name}! Your request has arrived and will be handled shortly.
 		#htmlContent = <h1>Hello {first_name} {last_name}!</h1> <p>Your request has arrived and will be handled shortly.</p>
 		htmlContent =
-        includeAttachmentsInMail = 0
+	        includeAttachmentsInMail = 0
 	}
 }
