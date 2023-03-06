@@ -1,3 +1,12 @@
+
+3.0.0
+
+[TASK] Update for TYPO3 10.4 and 11.5 and formrelay-core v5+
+
+2.0.1
+
+[TASK] updated extension icon
+
 2.0.0
 
 [TASK] updated extension for EXT:formrelay 2.0 (MEDO-241)
