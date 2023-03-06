@@ -15,9 +15,9 @@ $EM_CONF[$_EXTKEY] = [
     'version' => '2.0.1',
     'constraints' => [
         'depends' => [
-            'typo3' => '8.5.0-9.5.99',
-            'formrelay' => '>=2.0.0',
-            'formrelay_mail' => '>=2.0.0',
+            'typo3' => '10.4.0-11.5.99',
+            'formrelay' => '>=5.1.0',
+            'formrelay_mail' => '>=5.0.0',
         ],
         'conflicts' => [
         ],

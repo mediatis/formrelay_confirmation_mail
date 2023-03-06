@@ -1,0 +1,22 @@
+plugin.tx_formrelay_confirmation_mail {
+	settings {
+
+		enabled = {$plugin.tx_formrelay_confirmation_mail.settings.enabled}
+
+		subject = {$plugin.tx_formrelay_confirmation_mail.settings.subject}
+
+		recipients = {$plugin.tx_formrelay_confirmation_mail.settings.recipients}
+
+		sender = {$plugin.tx_formrelay_confirmation_mail.settings.sender}
+
+		plainBody = {$plugin.tx_formrelay_confirmation_mail.settings.plainBody}
+
+		htmlBody = {$plugin.tx_formrelay_confirmation_mail.settings.htmlBody}
+
+		includeAttachmentsInMail = {$plugin.tx_formrelay_confirmation_mail.settings.includeAttachmentsInMail}
+
+		passthroughFields = {$plugin.tx_formrelay_confirmation_mail.settings.passthroughFields}
+
+		ignoreEmptyFields  = {$plugin.tx_formrelay_confirmation_mail.settings.ignoreEmptyFields}
+	}
+}

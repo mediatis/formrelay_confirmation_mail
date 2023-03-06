@@ -1,0 +1,17 @@
+plugin.tx_formrelay_confirmation_mail {
+	settings {
+		# cat=plugin.tx_formrelay_confirmation_mail//1; type=int+; label=Disabled if set to 0
+		enabled = 1
+
+		subject = Confirmation Mail
+		recipients = {first_name} {last_name} <{email}>
+		sender = Mediatis Mediatis <user@domain.com>
+		plainBody = Hello {first_name} {last_name}! Your request has arrived and will be handled shortly.
+		#htmlBody = <h1>Hello {first_name} {last_name}!</h1> <p>Your request has arrived and will be handled shortly.</p>
+		htmlBody =
+
+		includeAttachmentsInMail = 0
+		passthroughFields = 1
+		ignoreEmptyFields = 1
+	}
+}
