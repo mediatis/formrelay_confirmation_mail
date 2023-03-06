@@ -5,7 +5,7 @@ plugin.tx_formrelay_confirmation_mail {
 
 		subject = {$plugin.tx_formrelay_confirmation_mail.settings.subject}
 
-		recipient = {$plugin.tx_formrelay_confirmation_mail.settings.recipient}
+		recipients = {$plugin.tx_formrelay_confirmation_mail.settings.recipients}
 
 		sender = {$plugin.tx_formrelay_confirmation_mail.settings.sender}
 
