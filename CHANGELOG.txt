@@ -1,4 +1,8 @@
 
+3.0.1
+
+[TASK] By default, do not ignore empty fields
+
 3.0.0
 
 [TASK] Update for TYPO3 10.4 and 11.5 and formrelay-core v5+

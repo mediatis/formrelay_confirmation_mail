@@ -12,6 +12,6 @@ plugin.tx_formrelay_confirmation_mail {
 
 		includeAttachmentsInMail = 0
 		passthroughFields = 1
-		ignoreEmptyFields = 1
+		ignoreEmptyFields = 0
 	}
 }
